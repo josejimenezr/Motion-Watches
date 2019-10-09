@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Meta data -->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Jquery library needs to be placed above any reference to Bootstrap js -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/custom.css">
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/carousel.js"></script>
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<script src="js/validateForm.js"></script>
+		<script type="text/javascript" src="js/showPassword.js"></script>
+		<script type="text/javascript" src="js/popovers.js"></script>
+
+		<!-- Page Title -->
+		<title>Motion Watches - Sign Up</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<header class="text-center">
+				<div id="brand-image-header">
+					<a href="index.html" target="_self"><img alt="Motion Watches" src="img/brand-header.png"></a>
+				</div>
+				<div id="search-input-header" class="text-center">
+					<form role="search" action="warningPage.html" target="_self">
+						<div class="form-group">
+							<div class="input-group">
+	        					<input type="text" class="form-control" placeholder="Search">
+		    					<button type="submit" class="btn btn-primary">
+		        					<span class="fa fa-search"></span>
+		    					</button>
+		    				</div>
+						</div>
+					</form>
+				</div>
+			</header>	
+
+
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	    	    <a class="navbar-brand" href="index.html">
+	    	    	<img alt="Motion Watches" src="img/brand-nav.png">
+	    	    </a>
+	        	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	            	<span class="navbar-toggler-icon"></span>
+	        	</button>
+	        	<div id="navbarNavDropdown" class="navbar-collapse collapse">
+	            	<ul class="navbar-nav mr-auto">
+	                	<li class="nav-item">
+	                    	<a class="nav-link" href="index.html">Home</a>
+	                	</li>
+	                	<li class="nav-item">
+		                    <a class="nav-link" href="warningPage.html">Deals</a>
+		                </li>
+		               	<li class="nav-item">
+		                    <a class="nav-link" href="watches.html">Watches</a>
+		                </li>
+		               	<li class="nav-item">
+		                    <a class="nav-link" href="contactUs.html">Contact Us</a>
+		                </li>
+		                <li class="nav-item">
+		                    <a class="nav-link" href="warningPage.html">About Us</a>
+		                </li>
+	            	</ul>
+			        <ul class="navbar-nav">
+			        	<li class="nav-item" data-toggle="modal" data-target="#loginModal">
+		                    <a class="nav-link" href="#" ><i class="fa fa-user"></i> Log In</a>
+		                </li>
+		                <li class="nav-item active">
+		                    <a class="nav-link" href="signUp.html">Sign Up <span class="sr-only">(current)</span></a>
+		                </li>
+		                <li class="nav-item">
+		                    <a class="nav-link" href="warningPage.html" ><i class="fa fa-shopping-cart"></i> Cart</a>
+		                </li>
+		            </ul>
+	        	</div>
+	    	</nav>
+	    	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+			  	<div class="modal-dialog" role="document">
+			    	<div class="modal-content">
+			      		<div class="modal-header">
+			        		<h5 class="modal-title">Log In</h5>
+			        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          			<span aria-hidden="true">&times;</span>
+			        		</button>
+			      		</div>
+			      		<form class="needs-validation" action="warningPage.html" target="_self" novalidate>
+			     			<div class="modal-body">
+			        			<p class="text-center">Welcome to our website. Please, access into your account to have full access to our features.</p>
+			        		
+								<div class="form-group required">
+									<div class="input-group">
+										<div class="input-group-prepend" data-toggle="popover" data-placement="bottom" title="User Name" data-content="Please, use your email address such as example@email.com">
+				    						<span class="input-group-text btn"> <i class="fa fa-user"></i> </span>
+				 						</div>
+										<input name="" class="form-control" placeholder="Email" type="email"required>
+					      				<div class="invalid-feedback">
+				        					Insert a valid email.
+				      					</div>
+									</div> <!-- input-group.// -->
+								</div> <!-- form-group// -->
+								<div class="form-group required">
+									<div class="input-group" id="show_hide_password">
+										<div class="input-group-prepend" class="input-group-prepend" data-toggle="popover" data-placement="bottom" title="Password" data-content="Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.">
+				    						<span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+				    					</div>
+			    						<input class="form-control" placeholder="**********" pattern=".{8,20}" type="password" aria-describedby="passwordHelpBlock" required>
+			    						<div class="input-group-prepend" id="icon-eye">
+			        						<a href="" class="input-group-text" id="passwordHelpBlock"><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+			      						</div>
+			    						<div class="invalid-feedback">
+				        					Insert a valid password.
+				      					</div>
+									</div> <!-- input-group.// -->
+								</div> <!-- form-group// -->
+								<div class="form-group"> 
+		    						<div class="checkbox">
+		      							<label> <input type="checkbox"> Remember me </label>
+		    						</div> <!-- checkbox .// -->
+		    					</div>
+		    					<p class="text-center"><a href="warningPage.html" class="btn">Forgot password?</a></p>
+							
+			    			</div>
+				    		<div class="modal-footer">
+				    			<button type="submit" class="btn btn-primary">Log In</button>
+					        	<a href="signUp.html" class="btn btn-outline-success">Sign Up</a>			        	
+				    		</div>
+			    		</form>
+			    	</div>
+			    </div>
+			</div>
+
+			<div class="container" id="main-body">
+				<nav aria-label="breadcrumb">
+				  	<ol class="breadcrumb">
+				    	<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+				    	<li class="breadcrumb-item active" aria-current="page">Sign Up</li>
+				  	</ol>
+				</nav>
+				<div class="alert alert-success">
+					<h4 class="alert-heading"><strong>Successfully signing up!</strong></h4>
+  					<p>
+  						Thank you for signing up on our website. Now you can explore all our features by logging in.
+  					</p>
+				</div>
+			</div>
+
+			<!-- Footer -->
+			<footer class="page-footer font-small mdb-color pt-4">
+	    		<!-- Footer Links -->
+	    		<div class="container text-center text-md-left">
+	    		<!-- Footer links -->
+		      		<div class="row text-center text-md-left mt-3 pb-3">
+
+			        	<!-- Grid column -->
+			        	<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+			          		<h6 class="text-uppercase mb-4 font-weight-bold">Motion Watches</h6>
+			          		<p>Motion Watches brings you the best watches with the best prices.<br><br>We always provide the best service to our customers and a spreading variety of watches.</p>
+			        	</div>
+			        	<!-- Grid column -->
+			        	<hr class="w-100 clearfix d-md-none">
+
+			        	<!-- Grid column -->
+			        	<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+			          		<h6 class="text-uppercase mb-4 font-weight-bold"><a href="watches.html">Watches</a></h6>
+			          		<p><a href="automaticWatches.html">Automatic</a></p>
+			          		<p><a href="warningPage.html">Chronograph</a></p>
+			          		<p><a href="warningPage.html">Luxury</a></p>
+			          		<p><a href="warningPage.html">Mechanical</a></p>
+			          		<p><a href="warningPage.html">Smart</a></p>
+			          		<p><a href="warningPage.html">Sport</a></p>
+			        	</div>
+			        	<!-- Grid column -->
+			        	<hr class="w-100 clearfix d-md-none">
+
+			        	<!-- Grid column -->
+			        	<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+			          		<h6 class="text-uppercase mb-4 font-weight-bold">Features</h6>
+			          		<p><a href="warningPage.html">Deals</a></p>
+			          		<p><a href="contactUs.html">Contact Us</a></p>
+			          		<p><a href="warningPage.html">About Us</a></p>
+			          		<p><a href="#" data-toggle="modal" data-target="#loginModal">Log In</a></p>
+			          		<p><a href="signUp.html">Sign Up</a></p>
+			        	</div>
+
+			        	<!-- Grid column -->
+			        	<hr class="w-100 clearfix d-md-none">
+
+			        	<!-- Grid column -->
+			        	<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+			          		<a href="index.html">
+			          			<img id="logo-footer"src="img/brand-footer.png">
+			        		</a>
+			        	</div>
+			        	<!-- Grid column -->
+			      	</div>
+				    <!-- Footer links -->
+				    <hr>
+
+				    <!-- Grid row -->
+				    <div class="row d-flex align-items-center">
+				        <!-- Grid column -->
+				        <div class="col-md-6 col-lg-7">
+
+				          	<!--Copyright-->
+				          	<p class="text-center text-md-left">© 2018 Copyright:
+				            	<a href="index.html">
+				              		<strong> MotionWatches.com</strong>
+				            	</a>
+				          	</p>
+				        </div>
+				        <!-- Grid column -->
+
+				        <!-- Grid column -->
+				       <div class="col-md-6 col-lg-5 ml-lg-0" id="social-media">
+				          	<!-- Social buttons -->
+				          	<div class="text-center text-md-right">
+				            	<ul class="list-unstyled list-inline">
+				              		<li class="list-inline-item" id="facebook-logo">
+				                		<a class="btn-floating btn-sm rgba-white-slight mx-auto" href="warningPage.html">
+				                  			<i class="fa fa-facebook fa-2x"></i>
+				                		</a>
+				              		</li>
+				              		<li class="list-inline-item" id="twitter-logo">
+				                		<a class="btn-floating btn-sm rgba-white-slight mx-auto" href="warningPage.html">
+				                  			<i class="fa fa-twitter fa-2x"></i>
+				                		</a>
+				              		</li>
+				              		<li class="list-inline-item" id="google-plus-logo">
+				                		<a class="btn-floating btn-sm rgba-white-slight mx-auto" href="warningPage.html">
+				                  			<i class="fa fa-google-plus fa-2x"></i>
+				                		</a>
+				              		</li>
+				              		<li class="list-inline-item" id="linkedin-logo">
+				                		<a class="btn-floating btn-sm rgba-white-slight mx-auto" href="warningPage.html">
+				                  			<i class="fa fa-linkedin fa-2x"></i>
+				                		</a>
+				              		</li>
+				            	</ul>
+				          	</div>
+		        		</div>
+		        		<div class="col-md-12">
+		        			<p>Created by: <b>Jose Luis Jimenez Reid</b> &#124 Student ID: <b>12045670</b></p>		        			
+		        		</div>
+		        	<!-- Grid column -->
+		      		</div>
+		      	<!-- Grid row -->
+		    	</div>
+		    <!-- Footer Links -->
+			</footer>
+		  	<!-- Footer -->
+		</div>
+
+	</body>
+</html>
