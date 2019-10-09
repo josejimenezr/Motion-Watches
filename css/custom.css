@@ -1,0 +1,140 @@
+@media (min-width: 1200px) {
+    .container{
+        max-width: 90%;
+    }
+}
+/*Header*/
+#brand-image-header img{
+	height: 200px;
+	width: 200px;
+	padding-top: -10px;
+}
+
+#search-input-header{
+	width:100%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+/*Menu bar*/
+.navbar-brand> img {
+	height: 43px;
+	width: 43px;
+}
+.dropdown:hover >.dropdown-menu {
+  	display: block;
+}
+
+.dropdown > .dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+/*Breadcrumbs*/
+.breadcrumb {
+	background-color: white;
+	padding-bottom: 30px;
+	padding-left: 0;
+	padding-top: 0;
+}
+
+/*Footer*/
+footer {
+	background-color: #171717;
+	color: #f2f2f2;
+}
+
+footer > div > div > div > p > a {
+	color: #f2f2f2;
+}
+
+footer > div > div > div > p > a:hover {
+	color: #cccccc;
+}
+
+footer > div > div > div > p > a:link {
+	text-decoration: none;
+}
+
+footer > .container > hr {
+	border-color: #f2f2f2;
+}
+
+#social-media > div > ul > li > a {
+	padding-top: 1rem;
+	padding-bottom: 0.25rem;
+	padding-left: .75rem;
+	color: currentColor;
+}
+
+#facebook-logo > a {
+    background-color: #3B5998;
+	padding-right: .75rem;
+}
+
+#twitter-logo > a {
+	background-color: #00ACED;
+	padding-right: 0.5rem;
+}
+
+#google-plus-logo > a {
+	background-color: #D34836;
+	padding-right: 0.5rem;
+}
+
+#linkedin-logo > a {
+	background-color: #0077B5;
+	padding-right: 0.5rem;
+}
+
+footer h6 a {
+	text-decoration: none;
+	color: currentColor;
+}
+
+footer h6 a:hover {
+	text-decoration: none;
+	color: #cccccc;
+}
+
+
+/*Main body style*/
+#main-body {
+	padding-top: 3rem;
+	padding-bottom: 4rem;
+	width:95%;
+}
+
+#main-body > form > h2 {
+	margin-bottom: 2rem;
+}
+/*Forms*/
+.form-group.required .col-form-label:before {
+  	content:"*";
+  	color:red;
+  	font-weight: bold;
+}
+
+#show_hide_password > .input-group-prepend > a:hover {
+	text-decoration: none;
+	color: currentColor;
+}
+
+.hide {
+	display: none;
+}
+/*Footer*/
+#logo-footer {
+	width: 210px;
+	height: auto;
+}
+
+/*card images*/
+.row > div > a {
+	text-decoration: none;
+	color: currentColor;
+}
+.row > div > a: hover {
+	text-decoration: none;
+	color: currentColor;
+}
